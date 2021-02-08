@@ -8,8 +8,6 @@ jobs:
   deploy:
     name: Deploy infrastructure
     runs-on: ubuntu-latest
-    outputs:
-      env-name: ${{ steps.env-name.outputs.environment }}
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -20,7 +18,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-east-2
+        aws-region: us-east-1
 
     - name: Deploy infrastructure with CloudFormation
       id: infrastructure-stack
