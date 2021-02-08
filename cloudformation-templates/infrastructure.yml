@@ -16,9 +16,7 @@ Parameters:
 Resources:
   S3B30R8H:
     Type: 'AWS::S3::Bucket'
-    Properties: {
-	BucketName: !Sub my-${AliasName}
-	}
+    Properties: BucketName: !Sub my-${AliasName}
     Metadata:
       'AWS::CloudFormation::Designer':
         id: 617f0fdb-fad8-44dc-a43a-6fd40dd56e2d
