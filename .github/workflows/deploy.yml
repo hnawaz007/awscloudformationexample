@@ -5,7 +5,7 @@ on:
     - master
 
 jobs:
-  deploy-infrastructure:
+  deploy:
     name: Deploy infrastructure
     runs-on: ubuntu-latest
     outputs:
