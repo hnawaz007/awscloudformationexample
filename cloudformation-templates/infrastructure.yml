@@ -8,13 +8,11 @@ Metadata:
       position:
         x: 655
         'y': 182
-      z: 0
-	  
+      z: 0	  
 Parameters:
   AliasName:
     Type: String
     Default: s3-demo-bucket-from-github-actions-007
-	
 Resources:
   S3B30R8H:
     Type: 'AWS::S3::Bucket'
